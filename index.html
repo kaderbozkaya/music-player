@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:wght@300&family=Roboto+Condensed:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+       <div class="music-player">
+        <nav>
+            <div class="top">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="top">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <img src="media/13783268373967016562_mq.jpg" class="pic">
+        <h1>Ali Cabbar </h1>
+        <p>Emir Can İğrek </p>
+        <audio id="song">
+            <source src="media/Emir Can İğrek Ali Cabbar.mp3" type="audio/mpeg">
+        </audio>
+        <input type="range" value="0" id="progress">
+        <div class="controls">
+
+            <div><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="onOff"></i></div>
+            <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+       </div> 
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
